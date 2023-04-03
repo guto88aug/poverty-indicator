@@ -30,3 +30,32 @@ Acessa o diretório no qual foi clonado o objeto
 ```shell script
 $ cd poverty-indicator
 ```
+### Passo 3 
+Executar o Docker compose
+
+```shell script
+$ docker-compose up -d
+```
+
+### Passo 4
+
+Adicionar os hosts no endereços (127.0.0.1 backend e 127.0.0.1 frontend)
+
+Caso seja Linux (ubuntu)
+```shell script
+$ sudo vi /etc/hosts
+```
+
+Caso seja Windows
+
+```shell script
+$ C://windows/System32/Drivers/Hosts
+```
+
+<b>Acessar Aplicação</b>   
+
+Swagger UI : [http://backend:8080/api/](http://backend:8080/api/swagger-ui/)
+
+Aplicação Frontend: http://frontend:4200/find
+
+
