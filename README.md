@@ -39,7 +39,7 @@ $ docker-compose up -d
 
 ### Passo 4
 
-Adicionar os hosts no endereços
+Adicionar os hosts no endereços (127.0.0.1 backend e 127.0.0.1 frontend)
 
 Caso seja Linux (ubuntu)
 ```shell script
@@ -52,4 +52,10 @@ Caso seja Windows
 $ C://windows/System32/Drivers/Hosts
 ```
 
-   
+<b>Acessar Aplicação</b>   
+
+Swagger UI : [http://backend:8080/api/](http://backend:8080/api/swagger-ui/)
+
+Aplicação Frontend: http://frontend:4200/find
+
+
