@@ -8,7 +8,7 @@ O Banco Mundial https://www.worldbank.org/ mantém uma série de indicadores eco
 
 <b>Backend</b>
 
-Sistema Java desenvolvido em spring boot na versão 2.7.0, utilizando a biblioteca Feing para acesso client ao banco mundial (http://api.worldbank.org).
+Sistema Java 11 desenvolvido em spring boot na versão 2.7.0, utilizando a biblioteca Feing para acesso client ao banco mundial (http://api.worldbank.org).
 
 <b>Frontend</b>
 
