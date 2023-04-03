@@ -39,7 +39,13 @@ $ docker-compose up -d
 
 ### Passo 4
 
-Adicionar os hosts no endereços (127.0.0.1 backend e 127.0.0.1 frontend)
+Adicionar os hosts no endereços
+
+```shell script
+127.0.0.1 backend
+127.0.0.1 frontend
+
+```
 
 Caso seja Linux (ubuntu)
 ```shell script
