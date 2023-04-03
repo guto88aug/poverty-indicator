@@ -54,8 +54,8 @@ $ C://windows/System32/Drivers/Hosts
 
 <b>Acessar Aplicação</b>   
 
-Swagger UI : [http://backend:8080/api/](http://backend:8080/api/swagger-ui/)
+Swagger UI : [http://backend:9000/api/](http://backend:9000/api/swagger-ui/)
 
-Aplicação Frontend: http://frontend:4200/find
+Aplicação Frontend: http://frontend:4200
 
 
