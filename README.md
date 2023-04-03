@@ -36,3 +36,20 @@ Executar o Docker compose
 ```shell script
 $ docker-compose up -d
 ```
+
+### Passo 4
+
+Adicionar os hosts no endereços
+
+Caso seja Linux (ubuntu)
+```shell script
+$ sudo vi /etc/hosts
+```
+
+Caso seja Windows
+
+```shell script
+$ C://windows/System32/Drivers/Hosts
+```
+
+   
