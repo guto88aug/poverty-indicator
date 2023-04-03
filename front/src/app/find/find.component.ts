@@ -22,6 +22,7 @@ export class FindComponent implements OnInit {
 
   indicator: PaginationIndicator = new PaginationIndicator();
   showTable: boolean = false;
+  showSpinner: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -44,13 +45,24 @@ export class FindComponent implements OnInit {
   validarPesquisa(pageIndex = 1, pageSize = 10) {
     if (this.formulario.valid) {
       let id = this.formulario.get("id").value;
+      this.showSpinner = true;
       this.apiService.getIndicador(id, pageIndex, pageSize)
         .subscribe({
           next: (res) => {
-            this.showTable = true;
-            this.indicator = res;
+            this.showSpinner = false;
+            if (res == null) {
+              this.showTable = false;
+              this.snackBar.open("Sem registros para o país pesquisado."
+                , "FECHAR", {
+                  duration: 9000,
+                });
+            } else {
+              this.showTable = true;
+              this.indicator = res;
+            }
           }
           , error: (err) => {
+            this.showSpinner = false;
             this.showTable = false;
             this.snackBar.open("Código do país não encontrado. " +
               "Por favor acesse a funcionalidade \"Países\" no menu superior " +
