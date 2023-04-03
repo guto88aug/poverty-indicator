@@ -30,3 +30,9 @@ Acessa o diretório no qual foi clonado o objeto
 ```shell script
 $ cd poverty-indicator
 ```
+### Passo 3 
+Executar o Docker compose
+
+```shell script
+$ docker-compose up -d
+```
